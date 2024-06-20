@@ -1,0 +1,68 @@
+/* styles.css */
+
+/* Reset default margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+/* Full viewport height for editor container */
+.editor-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Container for editors and output */
+#editors {
+    display: flex;
+    flex: 1;
+    height: calc(100% - 40px); /* Adjust for the resize handle */
+}
+
+/* Individual editor containers */
+.editor {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    overflow: hidden; /* Prevent scrollbars */
+}
+
+/* Textarea styles */
+textarea.code-editor {
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 10px; /* Padding inside the textarea */
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: inherit;
+}
+
+/* Resize handle */
+#resize-handle {
+    width: 100%;
+    height: 10px;
+    cursor: ns-resize; /* Cursor style */
+    background-color: #f0f0f0;
+}
+
+/* iframe container */
+#iframe-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9;
+}
+
+/* Output iframe */
+#output-frame {
+    width: 100%;
+    height: 100%;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
